@@ -80,7 +80,7 @@ nav {
 }
 
 .detailed_post p {
-  margin: 10px;
+  margin: 5px;
 }
 
 .blogpost article {
@@ -94,14 +94,38 @@ nav {
 
 .detailed_post article {
   border: solid #a1c6ea 1px;
-  margin: 10px;
+  margin: 1px;
   padding: 5px;
   border-radius: 10px;
   background-color: #bbd1ea;
 }
+article img {
+  width: 300px;
+}
+#heroimg {
+  width: 300px;
+}
+
 #blogpost {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  article img {
+    width: 200px;
+  }
+
+  .blogpost article {
+    width: 200px;
+    margin: 15px 2px;
+  }
+  .blogPostSection {
+    max-width: 100%;
+  }
+  .detailed_post {
+    margin: 5px 0;
+  }
 }
