@@ -1,0 +1,5 @@
+.blogPostSection {
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+}
