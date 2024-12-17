@@ -26,13 +26,14 @@ body {
 }
 
 section {
-  margin: 10px;
+  margin: 0;
 }
 p {
   font-size: 18px;
   margin: 10px 0;
 }
-button {
+button,
+input[type="submit"] {
   font-size: 20px;
 }
 
@@ -63,6 +64,58 @@ nav {
 }
 .nav-menu li {
   list-style: none;
+}
+.hero {
+  display: flex;
+  height: 50vh;
+  gap: 50px;
+  padding: 50px 100px;
+}
+.herotext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+.herotext div {
+  display: flex;
+  gap: 30px;
+}
+#heroimg {
+  width: 300px;
+}
+
+button,
+input[type="submit"] {
+  padding: 5px;
+  color: #507dbc;
+  background-color: #bbd1ea;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: solid 2px #507dbc;
+  font-weight: 700;
+}
+button:hover,
+input[type="submit"]:hover {
+  color: #04080f;
+  border-color: #04080f;
+}
+article button:hover {
+  background-color: #507dbc;
+}
+.newsletter {
+  background-color: #a1c6ea;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter input {
+  padding: 5px;
+  width: 30%;
+  font-size: 18px;
 }
 .blogpost p {
   color: #04080f;
@@ -102,9 +155,6 @@ nav {
 article img {
   width: 300px;
 }
-#heroimg {
-  width: 300px;
-}
 
 #blogpost {
   display: flex;
@@ -112,7 +162,27 @@ article img {
   flex-direction: column;
   gap: 30px;
 }
-
+footer {
+  display: flex;
+  background-color: #a1c6ea;
+  margin-top: 50px;
+  padding: 50px;
+  justify-content: space-around;
+}
+footer li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 5px;
+}
+footer ul {
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: #507dbc;
+}
 @media screen and (max-width: 768px) {
   article img {
     width: 200px;
@@ -127,5 +197,19 @@ article img {
   }
   .detailed_post {
     margin: 5px 0;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    height: 100%;
+    align-items: center;
+  }
+  .hero button {
+    font-size: 16px;
+  }
+  .herotext div {
+    gap: 5px;
+  }
+  .herotext {
+    min-width: 300px;
   }
 }

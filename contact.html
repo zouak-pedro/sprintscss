@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
   <title>Contact | Badr.js</title>
 </head>
 
@@ -20,53 +21,76 @@
   </nav>
 </body>
 <div>
-  <form action="">
-    <div>
-      <label for="name">Name</label>
-      <input type="text" name="name" id="" required>
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="" required>
-    </div>
-    <div>
-      <label for="message">Message</label>
-      <textarea name="message" id="" required></textarea>
-    </div>
-    <input type="submit" value="Send Message">
-  </form>
+  <section>
+    <form class="form" action="">
+      <h2>Contact Form</h2>
+      <div>
+        <label class="formNameText" for="name">Name</label>
+        <input class="formNameInput" type="text" name="name" id="" required>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Day</th>
-        <th>Opening Time</th>
-        <th>Closing Time</th>
-        <th>Location</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Sunday to Thursday</td>
-        <td>09:00 AM</td>
-        <td>03:30 PM</td>
-        <td>Annaba, Algeria</td>
-      </tr>
-      <tr>
-        <td>Friday</td>
-        <td>01:30 PM</td>
-        <td>05:30 PM</td>
-        <td>Annaba, Algeria</td>
-      </tr>
-      <tr>
-        <td>Saturday </td>
-        <td>09:00 AM</td>
-        <td>12:30 AM</td>
-        <td>Annaba, Algeria</td>
-      </tr>
-    </tbody>
-  </table>
+      </div>
+      <div>
+        <label class="formEmailText" for="email">Email</label>
+        <input class="formEmailInput" type="email" name="email" id="" required>
+      </div>
+      <div>
+        <label class="formMessageText" for="message">Message</label>
+        <textarea class="formMessageInput" name="message" id="" required></textarea>
+      </div>
+      <input lass="formSubmit" type="submit" value="Send Message">
+    </form>
 
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Opening Time</th>
+          <th>Closing Time</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sunday to Thursday</td>
+          <td>09:00 AM</td>
+          <td>03:30 PM</td>
+          <td>Annaba, Algeria</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>01:30 PM</td>
+          <td>05:30 PM</td>
+          <td>Annaba, Algeria</td>
+        </tr>
+        <tr>
+          <td>Saturday </td>
+          <td>09:00 AM</td>
+          <td>12:30 AM</td>
+          <td>Annaba, Algeria</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <footer>
+    <div class="socialmedia">
+      <strong>Social Media</strong>
+      <ul>
+        <li><a href="http://facebook.com">Facebook</a></li>
+        <li><a href="http://Instagram.com">Instagram</a></li>
+        <li><a href="http://linkedin.com">Linkedin</a></li>
+        <li><a href="http://github.com">Github</a></li>
+      </ul>
+    </div>
+    <div>
+      <strong>Legal pages</strong>
+      <ul>
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">Terms and conditions</a></li>
+        <li><a href="#">Disclosure Policy</a></li>
+        <li><a href="/contact.html">contact</a></li>
+      </ul>
+    </div>
+  </footer>
 </div>
 
 </html>
