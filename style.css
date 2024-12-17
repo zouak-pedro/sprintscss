@@ -1,14 +1,37 @@
+/* import */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+
+/* root configuration */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   color: #04080f;
+}
+h1,
+h2,
+nav {
+  font-family: "Oswald", Helvetica, sans-serif;
+  margin: 5px 0;
+  font-weight: 700;
 }
 body {
   background-color: #dae3e5;
   margin: 0;
 }
+
 section {
   margin: 10px;
 }
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+button {
+  font-size: 20px;
+}
+
+/* page style */
 nav {
   display: flex;
   justify-content: space-between;
